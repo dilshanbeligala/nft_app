@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
   List tabOptions = const [
     ["Recent", RecentTab()],
     ["Trending", TrendingTab()],
-    ["top", TopTab()],
+    ["Top", TopTab()],
   ];
   int _currentBottomIndex = 0;
   void _handleBottomIndexChange(int? index) {

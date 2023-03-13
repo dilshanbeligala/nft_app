@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MyAppBar extends StatelessWidget {
   final String title;
@@ -16,7 +17,7 @@ class MyAppBar extends StatelessWidget {
           Expanded(
             child: Text(
               title,
-              style: TextStyle(fontSize: 40),
+              style: GoogleFonts.bebasNeue(fontSize: 54),
             ),
           ),
           GestureDetector(

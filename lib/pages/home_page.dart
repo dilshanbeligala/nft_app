@@ -5,6 +5,7 @@ import 'package:nft_app/components/my_tabbar.dart';
 import 'package:nft_app/tabs/recent_tab.dart';
 import 'package:nft_app/tabs/top_tab.dart';
 import 'package:nft_app/tabs/trending_tab.dart';
+import 'package:nft_app/theme/glass_box.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -32,8 +33,11 @@ class _HomePageState extends State<HomePage> {
         length: tabOptions.length,
         child: Scaffold(
           backgroundColor: Colors.grey[300],
-          bottomNavigationBar: MyBottomBar(
-              index: _currentBottomIndex, onTap: _handleBottomIndexChange),
+          extendBody: true,
+          bottomNavigationBar: GlassBox(
+            child: MyBottomBar(
+                index: _currentBottomIndex, onTap: _handleBottomIndexChange),
+          ),
           body: ListView(
             children: [
               MyAppBar(
